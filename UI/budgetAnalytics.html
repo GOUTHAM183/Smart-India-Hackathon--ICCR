@@ -9,9 +9,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-    
-   
-
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link
@@ -414,12 +411,14 @@
 
     <!-- Template Main JS File -->
     <br><br><br>
-    <center><h1>Monthly Analysis</h1></center>
+    <center>
+      <h1>Monthly Analysis</h1>
+    </center>
     <script src="assets/js/main.js"></script>
     <div class="d-flex justify-content-evenly" style="padding:5%;">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Bar Chart depiction Regional office against no. of activities conducted</h5>
+          <h5 class="card-title">Bar Chart depicting Regional office against no. of activities conducted</h5>
 
           <!-- Bar Chart -->
           <canvas id="barChart" style="max-height: 400px;"></canvas>
@@ -431,6 +430,9 @@
                   labels: ['Bangalore', 'Chandigarh', 'Chennai', 'Cuttack', 'Goa', 'Guwahati', 'Hyderabad', 'Jaipur', 'Kolkata', 'Lucknow', 'Mumbai', 'New Delhi', 'Patna', 'Pune', 'Shillong', 'Thiruvananthapuram', 'Varanasi'],
                   datasets: [{
                     label: 'Regional office vs no. of activites',
+                    cursor: 'pointer',
+                    onclick: "location.href = 'UI/grapghInfo.html';",
+
                     data: [70, 59, 80, 81, 56, 55, 40, 100, 59, 80, 81, 56, 55, 40, 65, 59, 80],
                     backgroundColor: [
                       'rgba(255, 99, 132, 0.2)',
