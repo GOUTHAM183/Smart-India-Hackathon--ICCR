@@ -37,10 +37,19 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites', 
     'django.contrib.staticfiles',
+    'django.contrib.humanize',  
+    'bootstrap4form', 
+    'account', 
+    'pinax.invitations',  
+    'pinax.teams',  
+    'reversion',  
+    'rest_framework',
     'central',
     'users',
     "crispy_forms",
+    'helpdesk', 
 ]
 
 MIDDLEWARE = [
@@ -130,7 +139,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
-LOGIN_REDIRECT_URL = "index"
+LOGIN_REDIRECT_URL = "landing"
 
 LOGIN_URL = "login"
 
@@ -138,10 +147,27 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 MEDIA_URL = "/media/"
 
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = "smtp.gmail.com"
-EMAIL_PORT = 587
+HELPDESK_DEFAULT_SETTINGS = {
+'use_email_as_submitter': True,
+'email_on_ticket_assign': True,
+'email_on_ticket_change': True,
+'login_view_ticketlist': True,
+'email_on_ticket_apichange': True,
+'tickets_per_page': 25
+}
 
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = os.environ.get("EMAIL_USER")
-EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_PASS")
+HELPDESK_AUTO_SUBSCRIBE_ON_TICKET_RESPONSE = True
+HELPDESK_SUBMIT_A_TICKET_PUBLIC=True
+HELPDESK_KB_ENABLED = False
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+
+EMAIL_PORT = 465
+SITE_ID = 1
+
+
+
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = "gouthamlucky68@gmail.com"
+EMAIL_HOST_PASSWORD = "Lucky1503"
+EMAIL_USE_SSL = True

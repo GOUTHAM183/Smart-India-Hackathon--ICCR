@@ -24,12 +24,19 @@ def iccr(request):
 def index(request):
     return render(request, "central/index.html", {})
 
+def landing(request):
+    return render(request, "central/landing.html", {})
+
 
 def about(request):
     return render(request, "central/about.html", {"title": "About"})
 
 def usersprofile(request):
     return render(request, "central/usersProfile.html", {})
+
+
+
+
 
 
 
