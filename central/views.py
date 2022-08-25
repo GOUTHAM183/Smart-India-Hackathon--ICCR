@@ -21,21 +21,28 @@ def regional(request):
 def iccr(request):
     return render(request, "central/ICCRDash.html", {})
 
+def index(request):
+    return render(request, "central/index.html", {})
+
 
 def about(request):
     return render(request, "central/about.html", {"title": "About"})
 
+def usersprofile(request):
+    return render(request, "central/usersProfile.html", {})
+
+
 
 class PostListView(ListView):
     model = Post
-    template_name = "blog/home.html"
+    template_name = "central/home.html"
     context_object_name = "posts"
     ordering = ["-date_posted"]
 
 
 class UserPostListView(ListView):
     model = Post
-    template_name = "blog/user_posts.html"  # <app>/<model>_<viewtype>.html
+    template_name = "central/user_posts.html"  # <app>/<model>_<viewtype>.html
     context_object_name = "posts"
 
     def get_queryset(self):
