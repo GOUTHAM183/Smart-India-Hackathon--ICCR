@@ -47,6 +47,7 @@ urlpatterns = [
     path("pages-faq/", views.pagesfaq, name="pages-faq"),
     path("contact/", views.contact, name="contact"),
     path("landing/", views.landing, name="landing"),
+    path("raisetickets/", views.raisetickets, name="raisetickets"),
 
 
 
