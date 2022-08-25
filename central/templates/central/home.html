@@ -1,0 +1,30 @@
+{%extends "central/base.html" %} {% block content%}
+<div>
+  <form method="GET">
+    <input type="text" name="q" id="id_q" placeholder="Search..." />
+    <button type="submit">Search</button>
+  </form>
+</div>
+{% for post in posts%}
+<article class="media content-section">
+  <img
+    src="{{post.author.profile.image.url}}"
+    class="rounded-circle article-img"
+  />
+  <div class="media-body">
+    <div class="article-metadata">
+      <a class="mr-2" href="{% url 'user-posts' post.author.username%}"
+        >{{ post.author }}</a
+      >
+      <small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
+    </div>
+    <h2>
+      <a class="article-title" href="{% url 'post-detail' post.id %}"
+        >{{ post.title }}</a
+      >
+    </h2>
+    <p class="article-content">{{ post.content }}</p>
+  </div>
+</article>
+
+{% endfor %}{% endblock%}
