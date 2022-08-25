@@ -73,6 +73,22 @@ def quarterly(request):
     return render(request, "central/quarterly.html", {})
 
 
+def yearly(request):
+    return render(request, "central/yearly.html", {})
+
+
+def stats(request):
+    return render(request, "central/stats.html", {})
+
+
+def scholarships(request):
+    return render(request, "central/scholarships.html", {})
+
+
+def roform(request):
+    return render(request, "central/roForm.html", {})
+
+
 class PostListView(ListView):
     model = Post
     template_name = "central/home.html"

@@ -52,6 +52,10 @@ urlpatterns = [
     path("activitylist/", views.activitylist, name="activitylist"),
     path("budgetanalytics/", views.budgetanalytics, name="budgetanalytics"),
     path("quarterly/", views.quarterly, name="quarterly"),
+    path("yearly/", views.yearly, name="yearly"),
+    path("stats/", views.stats, name="stats"),
+    path("scholarships/", views.scholarships, name="scholarships"),
+    path("roform/", views.roform, name="roform"),
 
 
 
