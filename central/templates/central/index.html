@@ -77,11 +77,11 @@
             </li>
 
             <li class="notification-item">
-              <i class="bi bi-exclamation-circle text-warning"></i>
+              <i class="bi bi-chat-right-quote"></i>
               <div>
-                <h4>Lorem Ipsum</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>30 min. ago</p>
+                <h4>Chennai has posted</h4>
+                <p>Tabla Solo Recital</p>
+                <p>1 hr ago</p>
               </div>
             </li>
 
@@ -90,11 +90,11 @@
             </li>
 
             <li class="notification-item">
-              <i class="bi bi-x-circle text-danger"></i>
+              <i class="bi bi-chat-right-quote"></i>
               <div>
-                <h4>Atque rerum nesciunt</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>1 hr. ago</p>
+                <h4>Gujarat has posted</h4>
+                <p>Garbha event</p>
+                <p>5 days ago</p>
               </div>
             </li>
 
@@ -105,9 +105,9 @@
             <li class="notification-item">
               <i class="bi bi-check-circle text-success"></i>
               <div>
-                <h4>Sit rerum fuga</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>2 hrs. ago</p>
+                <h4>Ticket #2090 is assigned</h4>
+                <p>Funds allotment</p>
+                <p>8 days ago</p>
               </div>
             </li>
 
@@ -116,13 +116,14 @@
             </li>
 
             <li class="notification-item">
-              <i class="bi bi-info-circle text-primary"></i>
+              <i class="bi bi-chat-right-quote"></i>
               <div>
-                <h4>Dicta reprehenderit</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>4 hrs. ago</p>
+                <h4>Jaipur has posted</h4>
+                <p>Art Exhibition - 2022</p>
+                <p>10 days ago</p>
               </div>
             </li>
+
 
             <li>
               <hr class="dropdown-divider">
@@ -314,10 +315,21 @@
       </li><!-- End Contact Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="scholarships.html">
-          <i class="bi bi-book"></i>
-          <span>Scholarships</span>
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Scholarships</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
+        <ul id="forms-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="stats.html">
+              <i class="bi bi-circle"></i><span>Stats</span>
+            </a>
+          </li>
+          <li>
+            <a href="scholarships.html">
+              <i class="bi bi-circle"></i><span>Scholarship evaluation</span>
+            </a>
+          </li>
+        </ul>
       </li><!-- End Register Page Nav -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="{% url 'home'%}">
@@ -332,11 +344,11 @@
         </a>
       </li>
       <li class="nav-item">
-<<<<<<< Updated upstream
+
         <a class="nav-link collapsed" href="/helpdesk">
-=======
-        <a class="nav-link collapsed" href="{% url 'raisetickets' %}">
->>>>>>> Stashed changes
+
+        
+
           <i class="bi bi-question-circle"></i>
           <span>Raise tickets</span>
         </a>
