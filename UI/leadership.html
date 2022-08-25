@@ -9,8 +9,7 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
 
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
+    
      
 
     <!-- Google Fonts -->
@@ -19,7 +18,6 @@
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
         rel="stylesheet">
 
-    <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -28,16 +26,16 @@
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
 
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
 
+    <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <!-- ======= Header ======= -->
+
     <header id="header" class="header fixed-top d-flex align-items-center">
+
 
         <div class="d-flex align-items-center justify-content-between">
             <img src="assets/img/iccr_logo_long.jpeg" alt="" width="300" height="">
@@ -130,10 +128,72 @@
                         <li class="dropdown-footer">
                             <a href="#">Show all notifications</a>
                         </li>
-
                     </ul><!-- End Notification Dropdown Items -->
 
                 </li><!-- End Notification Nav -->
+
+                <li class="nav-item dropdown">
+
+
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+                        <li class="dropdown-header">
+                            You have 3 new messages
+                            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="message-item">
+                            <a href="#">
+                                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                                <div>
+                                    <h4>Maria Hudson</h4>
+                                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                                    <p>4 hrs. ago</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="message-item">
+                            <a href="#">
+                                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                                <div>
+                                    <h4>Anna Nelson</h4>
+                                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                                    <p>6 hrs. ago</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="message-item">
+                            <a href="#">
+                                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                                <div>
+                                    <h4>David Muldon</h4>
+                                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                                    <p>8 hrs. ago</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="dropdown-footer">
+                            <a href="#">Show all messages</a>
+                        </li>
+
+                    </ul><!-- End Messages Dropdown Items -->
+
+                </li><!-- End Messages Nav -->
 
                 <li class="nav-item dropdown pe-3">
 
@@ -188,6 +248,11 @@
                             </a>
                         </li>
 
+                    </ul><!-- End Profile Dropdown Items -->
+                </li><!-- End Profile Nav -->
+
+            </ul>
+        </nav><!-- End Icons Navigation -->
 
     </header><!-- End Header -->
 
@@ -197,12 +262,11 @@
         <ul class="sidebar-nav" id="sidebar-nav">
 
             <li class="nav-item">
-                <a class="nav-link " href="index.html">
+                <a class="nav-link collapsed" href="index.html">
                     <i class="bi bi-grid"></i>
                     <span>Dashboard</span>
                 </a>
             </li><!-- End Dashboard Nav -->
-
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="studentProfile.html">
@@ -217,6 +281,7 @@
                     <span>Activity List</span>
                 </a>
             </li><!-- End F.A.Q Page Nav -->
+
             <li class="nav-item">
                 <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
                     <i class="bi bi-menu-button-wide"></i><span>Analytics</span><i
@@ -240,25 +305,32 @@
                     </li>
                 </ul>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link collapsed" href="analytics.html">
-                <i class="bi bi-pie-chart-fill"></i>
-                <span>Analytics</span>
-              </a> -->
-            </li><!-- End Contact Page Nav -->
-
             <li class="nav-item">
-                <a class="nav-link collapsed" href="scholarships.html">
-                    <i class="bi bi-book"></i>
-                    <span>Scholarships</span>
+                <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-menu-button-wide"></i><span>Scholarships</span><i
+                        class="bi bi-chevron-down ms-auto"></i>
                 </a>
-            </li><!-- End Register Page Nav -->
+                <ul id="forms-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="stats.html">
+                            <i class="bi bi-circle"></i><span>Stats</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="scholarships.html">
+                            <i class="bi bi-circle"></i><span>Scholarship evaluation</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
             <li class="nav-item">
                 <a class="nav-link collapsed" href="roForm.html">
                     <i class="bi bi-ui-checks"></i>
                     <span>RO Form</span>
                 </a>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link collapsed" href="raiseTickets.html">
                     <i class="bi bi-question-circle"></i>
@@ -303,142 +375,119 @@
                 </a>
             </li><!-- End F.A.Q Page Nav -->
 
-            </a>
-            </li>
+
         </ul>
 
     </aside><!-- End Sidebar-->
 
+
     <main id="main" class="main">
-        <section class="mb-4">
-
-            <!--Section heading-->
-            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-            <!--Section description-->
-            <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to
-                contact us directly. Our team will come back to you.</p>
-
+        <section class="section dashboard">
             <div class="row">
 
-                <!--Grid column-->
-                <div class="col-md-8 mb-md-5 mb-5">
-                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <label for="name" class="">Your name</label>
-                                    <input type="text" id="name" name="name" class="form-control">
-                                </div>
-                            </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <label for="email" class="">Your email</label>
-                                    <input type="text" id="email" name="email" class="form-control">
-                                </div>
-                            </div>
-                            <!--Grid column-->
-
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form mb-0">
-                                    <label for="subject" class="">Subject</label>
-                                    <input type="text" id="subject" name="subject" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-12">
-
-                                <div class="md-form">
-                                    <label for="message">Your message</label>
-                                    <textarea type="text" id="message" name="message" rows="2"
-                                        class="form-control md-textarea"></textarea>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--Grid row-->
-
-                    </form>
-                    <div class="col-12"><br>
-                        <div class="text-center text-md-left">
-                            <a class="btn btn-primary"
-                                onclick="document.getElementById('contact-form').submit();">Send</a>
-                        </div>
-                        <div class="status"></div>
-                    </div>
-                </div>
-
-                <!--Grid column-->
-                <div class="col-md-4 text-center">
+                <!-- Left side columns -->
+                
 
                     <div class="card">
                         <div class="card-body">
-                            <ul class="list-unstyled mb-0"></ul>
-                            <br>
-                            <p><strong>Bengaluru Regional Office</strong><br> <i class="bi bi-geo-alt-fill"></i>No.7/2,
-                                1st
-                                Floor, 2nd Main, Palace
-                                Cross
-                                Road Bangalore – 560
-                                020
-                                Karnataka</p><br>
+                            <h5 class="card-title">Leader Board board</h5>
 
-                            <p><i class="bi bi-telephone-fill"></i> 080-23462714, 23462715, 23566914</p><br>
+                            <!-- Table with stripped rows -->
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Rank</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">College name</th>
+                                        <th scope="col">Score</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Micheal Scott</td>
+                                        <td>KSIT</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Dave wade</td>
+                                        <td>HIT</td>
+                                        <td>90</td>
 
-                            <p><i class="bi bi-envelope-fill"></i> robengaluru.iccr@gov.in ;
-                                &nbsp&nbsp&nbsp&nbsp&nbsp iccrbengaluru@gmail.com</p>
-                            </ul>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Robert Miles</td>
+                                        <td>JSS</td>
+                                        <td>80</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Abdul Alim </td>
+                                        <td>BMS</td>
+                                        <td>70</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Mohammad Gul</td>
+                                        <td>GAT</td>
+                                        <td>60</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>Rhea Warrier</td>
+                                        <td>RVCE</td>
+                                        <td>50</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>Isha S</td>
+                                        <td>SJBIT</td>
+                                        <td>40</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">8</th>
+                                        <td>James Robert</td>
+                                        <td>PES</td>
+                                        <td>30</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- End Table with stripped rows -->
                         </div>
                     </div>
-
-                </div>
-                <!--Grid column-->
-            </div>
-
+                    </div>
         </section>
+        </div>
+        <div class="pagetitle">
+        </div>
+        <hr class="rounded">
+        <style { border-top: 3px dashed #bbb; }></style>
 
-    </main><!-- End #main -->
+    </main>
 
-    <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
         <div class="copyright">
             &copy; Copyright <strong><span>Access Denied</span></strong>. All Rights Reserved
         </div>
 
-    </footer><!-- End Footer -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+                class="bi bi-arrow-up-short"></i></a>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/chart.js/chart.min.js"></script>
-    <script src="assets/vendor/echarts/echarts.min.js"></script>
-    <script src="assets/vendor/quill/quill.min.js"></script>
-    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+        <!-- Vendor JS Files -->
+        <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/chart.js/chart.min.js"></script>
+        <script src="assets/vendor/echarts/echarts.min.js"></script>
+        <script src="assets/vendor/quill/quill.min.js"></script>
+        <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+        <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+        <!-- Template Main JS File -->
+        <script src="assets/js/main.js"></script>
 
 </body>
 
