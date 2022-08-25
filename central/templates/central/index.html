@@ -244,7 +244,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
+              <a class="dropdown-item d-flex align-items-center" href="{% url 'logout' %}">
                 <i class="bi bi-box-arrow-right"></i>
                 <span>Sign Out</span>
               </a>
@@ -319,6 +319,12 @@
           <span>Scholarships</span>
         </a>
       </li><!-- End Register Page Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{% url 'home'%}">
+          <i class="bi bi-envelope-paper"></i>
+          <span>Posts</span>
+        </a>
+      </li>
       <li class="nav-item">
         <a class="nav-link collapsed" href="roForm.html">
           <i class="bi bi-ui-checks"></i>

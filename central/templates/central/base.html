@@ -49,21 +49,21 @@
                 {%if user.is_authenticated and user.is_superuser %}
                 
                 <a class="nav-item nav-link" href="{% url 'post-create'%}">New Post</a>
-                <a class="nav-item nav-link" href="{% url 'profile'%}">Profile</a>
+                <a class="nav-item nav-link" href="{{% url 'usersprofile' %}">Profile</a>
                 <a class="nav-item nav-link" href="{% url 'iccr'%}">ICCR</a>
                 <a class="nav-item nav-link" href="{% url 'logout'%}">Logout</a>
                 {% elif user.is_authenticated and user.username == "Chennai" %}
                 <a class="nav-item nav-link" href="{% url 'post-create'%}">New Post</a>
-                <a class="nav-item nav-link" href="{% url 'profile'%}">Profile</a>
+                <a class="nav-item nav-link" href="{% url 'usersprofile' %}">Profile</a>
                 <a class="nav-item nav-link" href="{% url 'regional'%}">Regional</a>
                 <a class="nav-item nav-link" href="{% url 'logout'%}">Logout</a>
                 {% elif user.is_authenticated and user.username == "Bangalore" %}
                 <a class="nav-item nav-link" href="{% url 'post-create'%}">New Post</a>
-                <a class="nav-item nav-link" href="{% url 'profile'%}">Profile</a>
+                <a class="nav-item nav-link" href="{% url 'usersprofile' %}">Profile</a>
                 <a class="nav-item nav-link" href="{% url 'regional'%}">Regional</a>
                 <a class="nav-item nav-link" href="{% url 'logout'%}">Logout</a>
                 {%else%}
-                <a class="nav-item nav-link" href="{% url 'login'%}">Login</a>
+                <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
                 {%endif%}
                 
 
