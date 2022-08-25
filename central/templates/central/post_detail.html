@@ -1,9 +1,6 @@
 {%extends "central/base.html" %} {% block content%}
 <article class="media content-section">
-  <img
-    src="{{object.author.profile.image.url}}"
-    class="rounded-circle article-img"
-  />
+  
   <div class="media-body">
     <div class="article-metadata">
       <a class="mr-2" href="{% url 'user-posts' post.author.username%}"
@@ -27,6 +24,12 @@
     </div>
     <h2 class="article-title">{{ object.title }}</h2>
     <p class="article-content">{{ object.content }}</p>
+    <div>
+      <img style="width: 300px;
+      height: 300px;float:none"
+      src="/media/default.png"
+      />
+  </div>
   </div>
 </article>
 {% endblock%}

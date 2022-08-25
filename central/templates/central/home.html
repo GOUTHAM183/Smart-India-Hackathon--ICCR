@@ -1,11 +1,13 @@
 {%extends "central/base.html" %} {% block content%}
-
+<div>
+  <form method="GET">
+    <input type="text" name="q" id="id_q" placeholder="Search..." />
+    <button type="submit">Search</button>
+  </form>
+</div>
 {% for post in posts%}
 <article class="media content-section">
-  <img
-    src="{{post.author.profile.image.url}}"
-    class="rounded-circle article-img"
-  />
+  
   <div class="media-body">
     <div class="article-metadata">
       <a class="mr-2" href="{% url 'user-posts' post.author.username%}"
@@ -19,6 +21,12 @@
       >
     </h2>
     <p class="article-content">{{ post.content }}</p>
+    <div>
+      <img style="width: 100px;
+      height: 100px;float:initial"
+      src="/media/default.png"
+      />
+  </div>
   </div>
 </article>
 
