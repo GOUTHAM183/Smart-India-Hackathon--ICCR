@@ -11,15 +11,19 @@ from django.views.generic import (
 )
 from .models import Post
 
+
 def home(request):
     context = {"posts": Post.objects.all()}
     return render(request, "central/home.html", context)
 
+
 def regional(request):
     return render(request, "central/regional.html", {})
 
+
 def iccr(request):
     return render(request, "central/ICCRDash.html", {})
+
 
 def index(request):
     return render(request, "central/index.html", {})
@@ -28,9 +32,21 @@ def index(request):
 def about(request):
     return render(request, "central/about.html", {"title": "About"})
 
+
 def usersprofile(request):
     return render(request, "central/usersProfile.html", {})
 
+
+def pagesfaq(request):
+    return render(request, "central/pages-faq.html", {})
+
+
+def contact(request):
+    return render(request, "central/contact.html", {})
+
+
+def landing(request):
+    return render(request, "central/landing.html", {})
 
 
 class PostListView(ListView):
