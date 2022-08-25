@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,8 +11,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{% static 'central/assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'central/assets/img/apple-touch-icon.png'" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -19,16 +20,16 @@
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
 
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link href="{% static 'central/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'central/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'central/assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'central/assets/vendor/quill/quill.snow.css' %}" rel="stylesheet">
+  <link href="{% static 'central/assets/vendor/quill/quill.bubble.css' %}" rel="stylesheet">
+  <link href="{% static 'central/assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'central/assets/vendor/simple-datatables/style.css' %}" rel="stylesheet">
 
 
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{% static 'central/assets/css/style.css' %}" rel="stylesheet">
 
 </head>
 
@@ -39,7 +40,7 @@
 
 
     <div class="d-flex align-items-center justify-content-between">
-      <img src="assets/img/iccr_logo_long.jpeg" alt="" width="300" height="">
+      <img src="{% static 'central/assets/img/iccr_logo_long.jpeg' %}" alt="" width="300" height="">
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div>
 
@@ -76,11 +77,11 @@
             </li>
 
             <li class="notification-item">
-              <i class="bi bi-exclamation-circle text-warning"></i>
+              <i class="bi bi-chat-right-quote"></i>
               <div>
-                <h4>Lorem Ipsum</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>30 min. ago</p>
+                <h4>Chennai has posted</h4>
+                <p>Tabla Solo Recital</p>
+                <p>1 hr ago</p>
               </div>
             </li>
 
@@ -89,11 +90,11 @@
             </li>
 
             <li class="notification-item">
-              <i class="bi bi-x-circle text-danger"></i>
+              <i class="bi bi-chat-right-quote"></i>
               <div>
-                <h4>Atque rerum nesciunt</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>1 hr. ago</p>
+                <h4>Gujarat has posted</h4>
+                <p>Garbha event</p>
+                <p>5 days ago</p>
               </div>
             </li>
 
@@ -104,9 +105,9 @@
             <li class="notification-item">
               <i class="bi bi-check-circle text-success"></i>
               <div>
-                <h4>Sit rerum fuga</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>2 hrs. ago</p>
+                <h4>Ticket #2090 is assigned</h4>
+                <p>Funds allotment</p>
+                <p>8 days ago</p>
               </div>
             </li>
 
@@ -115,11 +116,11 @@
             </li>
 
             <li class="notification-item">
-              <i class="bi bi-info-circle text-primary"></i>
+              <i class="bi bi-chat-right-quote"></i>
               <div>
-                <h4>Dicta reprehenderit</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>4 hrs. ago</p>
+                <h4>Jaipur has posted</h4>
+                <p>Art Exhibition - 2022</p>
+                <p>10 days ago</p>
               </div>
             </li>
 
@@ -129,7 +130,6 @@
             <li class="dropdown-footer">
               <a href="#">Show all notifications</a>
             </li>
-
           </ul><!-- End Notification Dropdown Items -->
 
         </li><!-- End Notification Nav -->
@@ -138,7 +138,7 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <img src="{% static 'central/assets/img/profile-img.jpg' %}" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">Bengaluru RO</span>
           </a><!-- End Profile Iamge Icon -->
 
@@ -152,7 +152,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="usersProfile.html">
+              <a class="dropdown-item d-flex align-items-center" href="{% url 'usersprofile' %}">
                 <i class="bi bi-person"></i>
                 <span>My Profile</span>
               </a>
@@ -162,7 +162,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="usersProfile.html">
+              <a class="dropdown-item d-flex align-items-center" href="{% url 'usersprofile' %}">
                 <i class="bi bi-gear"></i>
                 <span>Account Settings</span>
               </a>
@@ -172,7 +172,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+              <a class="dropdown-item d-flex align-items-center" href="{% url 'pages-faq' %}">
                 <i class="bi bi-question-circle"></i>
                 <span>Need Help?</span>
               </a>
@@ -246,11 +246,22 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="scholarships.html">
-          <i class="bi bi-book"></i>
-          <span>Scholarships</span>
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Scholarships</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-      </li><!-- End Register Page Nav -->
+        <ul id="forms-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="stats.html">
+              <i class="bi bi-circle"></i><span>Stats</span>
+            </a>
+          </li>
+          <li>
+            <a href="scholarships.html">
+              <i class="bi bi-circle"></i><span>Scholarship evaluation</span>
+            </a>
+          </li>
+        </ul>
+      </li>
       <li class="nav-item">
         <a class="nav-link collapsed" href="roForm.html">
           <i class="bi bi-ui-checks"></i>
@@ -334,10 +345,15 @@
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <ul>
-                      <li>A help desk is a resource intended to provide the customer or end user with information and support related to a company’s or institution’s products and services.</li>
-                      <li>Also, a ticketing system or the issue tracking system is a software that gathers, tracks, prioritize and solves issues.</li>
-                      <li>So, combining these definitions, the helpdesk ticketing system is an automated business resource which helps customers by solving their issues or queries about a product or the company.</li>
-                      <li>It also helps support agents to interact with the customers, possible customers or even a normal person who just wants some information about the company or their products.</li>
+                        <li>A help desk is a resource intended to provide the customer or end user with information and
+                          support related to a company’s or institution’s products and services.</li>
+                        <li>Also, a ticketing system or the issue tracking system is a software that gathers, tracks,
+                          prioritize and solves issues.</li>
+                        <li>So, combining these definitions, the helpdesk ticketing system is an automated business
+                          resource which helps customers by solving their issues or queries about a product or the
+                          company.</li>
+                        <li>It also helps support agents to interact with the customers, possible customers or even a
+                          normal person who just wants some information about the company or their products.</li>
                       </ul>
                     </div>
                   </div>
@@ -352,7 +368,10 @@
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      An IT help desk ticketing system translates all end user issues from disparate sources into tickets. The system tracks the status of each ticket as support staff members work on solving the issue. A ticket records all interactions with a user as well as internal conversations between staff members on the issue.
+                      An IT help desk ticketing system translates all end user issues from disparate sources into
+                      tickets. The system tracks the status of each ticket as support staff members work on solving the
+                      issue. A ticket records all interactions with a user as well as internal conversations between
+                      staff members on the issue.
                     </div>
                   </div>
                 </div>
@@ -366,7 +385,10 @@
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      The channel of intake, of course, is only the beginning. What happens once a ticket has entered the system? Where does it go from there, and how much influence do you have over its journey? All of these are important questions to consider as you look for help desk software that fits exactly what you’re looking for.
+                      The channel of intake, of course, is only the beginning. What happens once a ticket has entered
+                      the system? Where does it go from there, and how much influence do you have over its journey? All
+                      of these are important questions to consider as you look for help desk software that fits exactly
+                      what you’re looking for.
                     </div>
                   </div>
                 </div>
@@ -381,10 +403,15 @@
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <ul>
-                      <li>A help desk is a resource intended to provide the customer or end user with information and support related to a company’s or institution’s products and services.</li>
-                      <li>Also, a ticketing system or the issue tracking system is a software that gathers, tracks, prioritize and solves issues.</li>
-                      <li>So, combining these definitions, the helpdesk ticketing system is an automated business resource which helps customers by solving their issues or queries about a product or the company.</li>
-                      <li>It also helps support agents to interact with the customers, possible customers or even a normal person who just wants some information about the company or their products.</li>
+                        <li>A help desk is a resource intended to provide the customer or end user with information and
+                          support related to a company’s or institution’s products and services.</li>
+                        <li>Also, a ticketing system or the issue tracking system is a software that gathers, tracks,
+                          prioritize and solves issues.</li>
+                        <li>So, combining these definitions, the helpdesk ticketing system is an automated business
+                          resource which helps customers by solving their issues or queries about a product or the
+                          company.</li>
+                        <li>It also helps support agents to interact with the customers, possible customers or even a
+                          normal person who just wants some information about the company or their products.</li>
                       </ul>
                     </div>
                   </div>
@@ -399,7 +426,10 @@
                   <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      An IT help desk ticketing system translates all end user issues from disparate sources into tickets. The system tracks the status of each ticket as support staff members work on solving the issue. A ticket records all interactions with a user as well as internal conversations between staff members on the issue.
+                      An IT help desk ticketing system translates all end user issues from disparate sources into
+                      tickets. The system tracks the status of each ticket as support staff members work on solving the
+                      issue. A ticket records all interactions with a user as well as internal conversations between
+                      staff members on the issue.
                     </div>
                   </div>
                 </div>
@@ -413,7 +443,10 @@
                   <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      The channel of intake, of course, is only the beginning. What happens once a ticket has entered the system? Where does it go from there, and how much influence do you have over its journey? All of these are important questions to consider as you look for help desk software that fits exactly what you’re looking for.
+                      The channel of intake, of course, is only the beginning. What happens once a ticket has entered
+                      the system? Where does it go from there, and how much influence do you have over its journey? All
+                      of these are important questions to consider as you look for help desk software that fits exactly
+                      what you’re looking for.
                     </div>
                   </div>
                 </div>
@@ -445,17 +478,17 @@
         class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/chart.js/chart.min.js"></script>
-    <script src="assets/vendor/echarts/echarts.min.js"></script>
-    <script src="assets/vendor/quill/quill.min.js"></script>
-    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="{% static 'central/assets/vendor/apexcharts/apexcharts.min.js' %}"></script>
+    <script src="{% static 'central/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'central/assets/vendor/chart.js/chart.min.js' %}"></script>
+    <script src="{% static 'central/assets/vendor/echarts/echarts.min.js' %}"></script>
+    <script src="{% static 'central/assets/vendor/quill/quill.min.js' %}"></script>
+    <script src="{% static 'central/assets/vendor/simple-datatables/simple-datatables.js' %}"></script>
+    <script src="{% static 'central/assets/vendor/tinymce/tinymce.min.js' %}"></script>
+    <script src="{% static 'central/assets/vendor/php-email-form/validate.js' %}"></script>
 
     <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="{% static 'central/assets/js/main.js' %}"></script>
 
 </body>
 

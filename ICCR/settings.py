@@ -171,3 +171,5 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = "gouthamlucky68@gmail.com"
 EMAIL_HOST_PASSWORD = "Lucky1503"
 EMAIL_USE_SSL = True
+
+
