@@ -271,16 +271,16 @@
         </a>
       </li><!-- End Dashboard Nav -->
 
-
+ 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="central/studentProfile.html">
+        <a class="nav-link collapsed" href="{% url 'studentprofile' %}">
           <i class="bi bi-person"></i>
           <span>Students</span>
         </a>
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="activityList.html">
+        <a class="nav-link collapsed" href="{% url 'activitylist' %}">
           <i class="bi bi-list-ul"></i>
           <span>Activity List</span>
         </a>
@@ -291,12 +291,12 @@
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="budgetAnalytics.html">
+            <a href="{% url 'budgetanalytics' %}">
               <i class="bi bi-circle"></i><span>Monthly</span>
             </a>
           </li>
           <li>
-            <a href="quarterly.html">
+            <a href="{% url 'quarterly' %}">
               <i class="bi bi-circle"></i><span>Quarterly</span>
             </a>
           </li>

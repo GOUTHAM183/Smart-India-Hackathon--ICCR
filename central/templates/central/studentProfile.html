@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,16 +19,16 @@
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
 
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link href="{% static 'central/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'central/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'central/assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'central/assets/vendor/quill/quill.snow.css' %}" rel="stylesheet">
+  <link href="{% static 'central/assets/vendor/quill/quill.bubble.css' %}" rel="stylesheet">
+  <link href="{% static 'central/assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'central/assets/vendor/simple-datatables/style.css' %}" rel="stylesheet">
 
 
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{% static 'central/assets/css/style.css' %}" rel="stylesheet">
 
 </head>
 
@@ -38,7 +39,7 @@
 
 
     <div class="d-flex align-items-center justify-content-between">
-      <img src="assets/img/iccr_logo_long.jpeg" alt="" width="300" height="">
+      <img src="{% static 'central/assets/img/iccr_logo_long.jpeg' %}" alt="" width="300" height="">
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div>
 
@@ -75,11 +76,11 @@
             </li>
 
             <li class="notification-item">
-              <i class="bi bi-exclamation-circle text-warning"></i>
+              <i class="bi bi-chat-right-quote"></i>
               <div>
-                <h4>Lorem Ipsum</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>30 min. ago</p>
+                <h4>Chennai has posted</h4>
+                <p>Tabla Solo Recital</p>
+                <p>1 hr ago</p>
               </div>
             </li>
 
@@ -88,11 +89,11 @@
             </li>
 
             <li class="notification-item">
-              <i class="bi bi-x-circle text-danger"></i>
+              <i class="bi bi-chat-right-quote"></i>
               <div>
-                <h4>Atque rerum nesciunt</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>1 hr. ago</p>
+                <h4>Gujarat has posted</h4>
+                <p>Garbha event</p>
+                <p>5 days ago</p>
               </div>
             </li>
 
@@ -103,9 +104,9 @@
             <li class="notification-item">
               <i class="bi bi-check-circle text-success"></i>
               <div>
-                <h4>Sit rerum fuga</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>2 hrs. ago</p>
+                <h4>Ticket #2090 is assigned</h4>
+                <p>Funds allotment</p>
+                <p>8 days ago</p>
               </div>
             </li>
 
@@ -114,11 +115,11 @@
             </li>
 
             <li class="notification-item">
-              <i class="bi bi-info-circle text-primary"></i>
+              <i class="bi bi-chat-right-quote"></i>
               <div>
-                <h4>Dicta reprehenderit</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>4 hrs. ago</p>
+                <h4>Jaipur has posted</h4>
+                <p>Art Exhibition - 2022</p>
+                <p>10 days ago</p>
               </div>
             </li>
 
@@ -128,14 +129,13 @@
             <li class="dropdown-footer">
               <a href="#">Show all notifications</a>
             </li>
-
           </ul><!-- End Notification Dropdown Items -->
 
         </li><!-- End Notification Nav -->
 
         <li class="nav-item dropdown">
 
- 
+
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
             <li class="dropdown-header">
@@ -148,7 +148,7 @@
 
             <li class="message-item">
               <a href="#">
-                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <img src="{% static 'central/assets/img/messages-1.jpg' %}" alt="" class="rounded-circle">
                 <div>
                   <h4>Maria Hudson</h4>
                   <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -162,7 +162,7 @@
 
             <li class="message-item">
               <a href="#">
-                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <img src="{% static 'central/assets/img/messages-2.jpg' %}" alt="" class="rounded-circle">
                 <div>
                   <h4>Anna Nelson</h4>
                   <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -176,7 +176,7 @@
 
             <li class="message-item">
               <a href="#">
-                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <img src="{% static 'central/assets/img/messages-3.jpg' %}" alt="" class="rounded-circle">
                 <div>
                   <h4>David Muldon</h4>
                   <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -199,7 +199,7 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <img src="{% static 'central/assets/img/profile-img.jpg' %}" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">Bengaluru RO</span>
           </a><!-- End Profile Iamge Icon -->
 
@@ -303,15 +303,26 @@
               <i class="bi bi-circle"></i><span>Yearly</span>
             </a>
           </li>
-          </ul>
-          </li>
+        </ul>
+      </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="scholarships.html">
-          <i class="bi bi-book"></i>
-          <span>Scholarships</span>
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Scholarships</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-      </li><!-- End Register Page Nav -->
+        <ul id="forms-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="stats.html">
+              <i class="bi bi-circle"></i><span>Stats</span>
+            </a>
+          </li>
+          <li>
+            <a href="scholarships.html">
+              <i class="bi bi-circle"></i><span>Scholarship evaluation</span>
+            </a>
+          </li>
+        </ul>
+      </li>
       <li class="nav-item">
         <a class="nav-link collapsed" href="roForm.html">
           <i class="bi bi-ui-checks"></i>
@@ -576,24 +587,24 @@
     <div class="copyright">
       &copy; Copyright <strong><span>Access Denied</span></strong>. All Rights Reserved
     </div>
-    
+
   </footer>
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-        class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/chart.js/chart.min.js"></script>
-    <script src="assets/vendor/echarts/echarts.min.js"></script>
-    <script src="assets/vendor/quill/quill.min.js"></script>
-    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="{% static 'central/assets/vendor/apexcharts/apexcharts.min.js' %}"></script>
+  <script src="{% static 'central/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'central/assets/vendor/chart.js/chart.min.js' %}"></script>
+  <script src="{% static 'central/assets/vendor/echarts/echarts.min.js' %}"></script>
+  <script src="{% static 'central/assets/vendor/quill/quill.min.js' %}"></script>
+  <script src="{% static 'central/assets/vendor/simple-datatables/simple-datatables.js' %}"></script>
+  <script src="{% static 'central/assets/vendor/tinymce/tinymce.min.js' %}"></script>
+  <script src="{% static 'central/assets/vendor/php-email-form/validate.js' %}"></script>
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+  <!-- Template Main JS File -->
+  <script src="{% static 'central/assets/js/main.js' %}"></script>
 
 </body>
 

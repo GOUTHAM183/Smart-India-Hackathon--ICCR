@@ -1,4 +1,3 @@
-{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,22 +9,25 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+    
+   
+
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
 
-  <link href="{% static 'central/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-  <link href="{% static 'central/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
-  <link href="{% static 'central/assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
-  <link href="{% static 'central/assets/vendor/quill/quill.snow.css' %}" rel="stylesheet">
-  <link href="{% static 'central/assets/vendor/quill/quill.bubble.css' %}" rel="stylesheet">
-  <link href="{% static 'central/assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
-  <link href="{% static 'central/assets/vendor/simple-datatables/style.css' %}" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
 
 
-  <link href="{% static 'central/assets/css/style.css' %}" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
@@ -36,7 +38,7 @@
 
 
     <div class="d-flex align-items-center justify-content-between">
-      <img src="{% static 'central/assets/img/iccr_logo_long.jpeg' %}" alt="" width="300" height="">
+      <img src="assets/img/iccr_logo_long.jpeg" alt="" width="300" height="">
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div>
 
@@ -72,16 +74,12 @@
               <hr class="dropdown-divider">
             </li>
 
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
             <li class="notification-item">
-              <i class="bi bi-chat-right-quote"></i>
+              <i class="bi bi-exclamation-circle text-warning"></i>
               <div>
-                <h4>Chennai has posted</h4>
-                <p>Tabla Solo Recital</p>
-                <p>1 hr ago</p>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
               </div>
             </li>
 
@@ -90,11 +88,11 @@
             </li>
 
             <li class="notification-item">
-              <i class="bi bi-chat-right-quote"></i>
+              <i class="bi bi-x-circle text-danger"></i>
               <div>
-                <h4>Gujarat has posted</h4>
-                <p>Garbha event</p>
-                <p>5 days ago</p>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
               </div>
             </li>
 
@@ -105,9 +103,9 @@
             <li class="notification-item">
               <i class="bi bi-check-circle text-success"></i>
               <div>
-                <h4>Ticket #2090 is assigned</h4>
-                <p>Funds allotment</p>
-                <p>8 days ago</p>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
               </div>
             </li>
 
@@ -116,11 +114,11 @@
             </li>
 
             <li class="notification-item">
-              <i class="bi bi-chat-right-quote"></i>
+              <i class="bi bi-info-circle text-primary"></i>
               <div>
-                <h4>Jaipur has posted</h4>
-                <p>Art Exhibition - 2022</p>
-                <p>10 days ago</p>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
               </div>
             </li>
 
@@ -130,13 +128,14 @@
             <li class="dropdown-footer">
               <a href="#">Show all notifications</a>
             </li>
+
           </ul><!-- End Notification Dropdown Items -->
 
         </li><!-- End Notification Nav -->
 
         <li class="nav-item dropdown">
 
-
+ 
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
             <li class="dropdown-header">
@@ -200,7 +199,7 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="{% static 'central/assets/img/profile-img.jpg' %}" alt="Profile" class="rounded-circle">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">Bengaluru RO</span>
           </a><!-- End Profile Iamge Icon -->
 
@@ -304,25 +303,15 @@
               <i class="bi bi-circle"></i><span>Yearly</span>
             </a>
           </li>
-        </ul>
-      </li>
+          </ul>
+          </li>
+
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i><span>Scholarships</span><i class="bi bi-chevron-down ms-auto"></i>
+        <a class="nav-link collapsed" href="scholarships.html">
+          <i class="bi bi-book"></i>
+          <span>Scholarships</span>
         </a>
-        <ul id="forms-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="stats.html">
-              <i class="bi bi-circle"></i><span>Stats</span>
-            </a>
-          </li>
-          <li>
-            <a href="scholarships.html">
-              <i class="bi bi-circle"></i><span>Scholarship evaluation</span>
-            </a>
-          </li>
-        </ul>
-      </li>
+      </li><!-- End Register Page Nav -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="roForm.html">
           <i class="bi bi-ui-checks"></i>
@@ -375,139 +364,236 @@
 
   </aside><!-- End Sidebar-->
 
+
+  <main id="main" class="main">
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-12">
+          <div class="row">
+
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card sales-card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                    <li><a class="dropdown-item" href="#">Total</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Students</h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-people-fill"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>745</h6>
+                      <span class="text-success small pt-1 fw-bold">12%</span> <span
+                        class="text-muted small pt-2 ps-1">increase</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card revenue-card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+                    <li><a class="dropdown-item" href="#">This Quarter</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                    <li><a class="dropdown-item" href="#">Total</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Scholarship</h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-calendar3"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>100</h6>
+                      <span class="text-success small pt-1 fw-bold">8%</span> <span
+                        class="text-muted small pt-2 ps-1">increase</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card revenue-card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Allotted</a></li>
+                    <li><a class="dropdown-item" href="#">Used</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Scholarship Budget</h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-currency-rupee"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>₹200000</h6>
+                      <span class="text-success small pt-1 fw-bold">8%</span> <span
+                        class="text-muted small pt-2 ps-1">increase</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Default Card -->
+          </div>
+
+
+        </div>
+    </section>
+
+    <section class="section">
+      <div class="row">
+
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Line Chart of Student-Enrolment</h5>
+
+              <!-- Line Chart -->
+              <canvas id="lineChart" style="max-height: 400px;"></canvas>
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  new Chart(document.querySelector('#lineChart'), {
+                    type: 'line',
+                    data: {
+                      labels: ['2015', '2016', '2017', '2018', '2018', '2019', '2020', '2021', '2022'],
+                      datasets: [{
+                        label: 'Number of students enrolled',
+                        data: [65, 59, 80, 81, 56, 55, 35, 25, 55],
+                        fill: false,
+                        borderColor: 'rgb(75, 192, 192)',
+                        tension: 0.1
+                      }]
+                    },
+                    options: {
+                      scales: {
+                        y: {
+                          beginAtZero: true
+                        }
+                      }
+                    }
+                  });
+                });
+              </script>
+              <!-- End Line CHart -->
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Enrolment in colleges</h5>
+
+              <!-- Table with stripped rows -->
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">College Name</th>
+                    <th scope="col">Number of students enrolled</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>KSIT</td>
+                    <td>170</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>HIT</td>
+                    <td>200</td>
+
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>JSS</td>
+                    <td>140</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>BMS</td>
+                    <td>140</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>GAT</td>
+                    <td>200</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- End Table with stripped rows -->
+            </div>
+          </div>
+    </section>
+
+  </main>
+
   <footer id="footer" class="footer">
     <div class="copyright">
       &copy; Copyright <strong><span>Access Denied</span></strong>. All Rights Reserved
     </div>
-    <!--<div class="credits">-->
-
+    
+  </footer>
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
         class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="{% static 'central/assets/vendor/apexcharts/apexcharts.min.js' %}"></script>
-    <script src="{% static 'central/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'central/assets/vendor/chart.js/chart.min.js' %}"></script>
-    <script src="{% static 'central/assets/vendor/echarts/echarts.min.js' %}"></script>
-    <script src="{% static 'central/assets/vendor/quill/quill.min.js' %}"></script>
-    <script src="{% static 'central/assets/vendor/simple-datatables/simple-datatables.js' %}"></script>
-    <script src="{% static 'central/assets/vendor/tinymce/tinymce.min.js' %}"></script>
-    <script src="{% static 'central/assets/vendor/php-email-form/validate.js' %}"></script>
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.min.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
-    <br><br><br>
-    <center><h1>Monthly Analysis</h1></center>
-    <script src="{% static 'central/assets/js/main.js' %}"></script>
-    <div class="d-flex justify-content-evenly" style="padding:5%;">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Bar Chart depiction Regional office against no. of activities conducted</h5>
-
-          <!-- Bar Chart -->
-          <canvas id="barChart" style="max-height: 400px;"></canvas>
-          <script>
-            document.addEventListener("DOMContentLoaded", () => {
-              new Chart(document.querySelector('#barChart'), {
-                type: 'bar',
-                data: {
-                  labels: ['Bangalore', 'Chandigarh', 'Chennai', 'Cuttack', 'Goa', 'Guwahati', 'Hyderabad', 'Jaipur', 'Kolkata', 'Lucknow', 'Mumbai', 'New Delhi', 'Patna', 'Pune', 'Shillong', 'Thiruvananthapuram', 'Varanasi'],
-                  datasets: [{
-                    label: 'Regional office vs no. of activites',
-                    data: [70, 59, 80, 81, 56, 55, 40, 100, 59, 80, 81, 56, 55, 40, 65, 59, 80],
-                    backgroundColor: [
-                      'rgba(255, 99, 132, 0.2)',
-                      'rgba(255, 159, 64, 0.2)',
-                      'rgba(255, 205, 86, 0.2)',
-                      'rgba(75, 192, 192, 0.2)',
-                      'rgba(54, 162, 235, 0.2)',
-                      'rgba(153, 102, 255, 0.2)',
-                      'rgba(201, 203, 207, 0.2)',
-                      'rgba(255, 99, 132, 0.2)',
-                      'rgba(255, 159, 64, 0.2)',
-                      'rgba(255, 205, 86, 0.2)',
-                      'rgba(75, 192, 192, 0.2)',
-                      'rgba(54, 162, 235, 0.2)',
-                      'rgba(153, 102, 255, 0.2)',
-                      'rgba(201, 203, 207, 0.2)',
-                      'rgba(255, 99, 132, 0.2)',
-                      'rgba(255, 159, 64, 0.2)',
-                      'rgba(255, 205, 86, 0.2)'
-                    ],
-                    borderColor: [
-                      'rgb(255, 99, 132)',
-                      'rgb(255, 159, 64)',
-                      'rgb(255, 205, 86)',
-                      'rgb(75, 192, 192)',
-                      'rgb(54, 162, 235)',
-                      'rgb(153, 102, 255)',
-                      'rgb(201, 203, 207)',
-                      'rgb(255, 99, 132)',
-                      'rgb(255, 159, 64)',
-                      'rgb(255, 205, 86)',
-                      'rgb(75, 192, 192)',
-                      'rgb(54, 162, 235)',
-                      'rgb(153, 102, 255)',
-                      'rgb(201, 203, 207)',
-                      'rgb(255, 99, 132)',
-                      'rgb(255, 159, 64)',
-                      'rgb(255, 205, 86)'
-                    ],
-                    borderWidth: 1
-                  }]
-                },
-                options: {
-                  scales: {
-                    y: {
-                      beginAtZero: true
-                    }
-                  }
-                }
-              });
-            });
-          </script>
-          <!-- End Bar CHart -->
-
-
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <canvas id="pieChart" style="max-height: 400px;"></canvas>
-          <script>
-            document.addEventListener("DOMContentLoaded", () => {
-              new Chart(document.querySelector('#pieChart'), {
-                type: 'pie',
-                data: {
-                  labels: [
-                    'Horizon series/Kala vishwa program',
-                    'International student welfare',
-                    'Exhibitions/Seminar',
-                    'Scholarships',
-                    'Distinguished visitors'
-                  ],
-                  datasets: [{
-                    label: 'My First Dataset',
-                    data: [30, 30, 15, 15, 7],
-                    backgroundColor: [
-                      'rgb(255, 99, 132)',
-                      'rgb(54, 162, 235)',
-                      'rgb(255, 205, 86)',
-                      'rgb(128,0,128)',
-                      'rgb(255, 165, 0)'
-
-                    ],
-                    hoverOffset: 4
-                  }]
-                }
-              });
-            });
-          </script>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
+    <script src="assets/js/main.js"></script>
 
 </body>
 

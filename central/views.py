@@ -53,12 +53,24 @@ def landing(request):
     return render(request, "central/landing.html", {})
 
 
-
-
-
 def raisetickets(request):
     return render(request, "central/raiseTickets.html", {})
 
+
+def studentprofile(request):
+    return render(request, "central/studentProfile.html", {})
+
+
+def activitylist(request):
+    return render(request, "central/activityList.html", {})
+
+
+def budgetanalytics(request):
+    return render(request, "central/budgetAnalytics.html", {})
+
+
+def quarterly(request):
+    return render(request, "central/quarterly.html", {})
 
 
 class PostListView(ListView):
