@@ -28,6 +28,7 @@ def iccr(request):
 def index(request):
     return render(request, "central/index.html", {})
 
+
 def landing(request):
     return render(request, "central/landing.html", {})
 
@@ -52,8 +53,17 @@ def landing(request):
     return render(request, "central/landing.html", {})
 
 
+<< << << < Updated upstream
 
 
+== == == =
+
+
+def raisetickets(request):
+    return render(request, "central/raiseTickets.html", {})
+
+
+>>>>>> > Stashed changes
 
 
 class PostListView(ListView):
