@@ -421,17 +421,19 @@
           <h5 class="card-title">Bar Chart depicting Regional office against no. of activities conducted</h5>
 
           <!-- Bar Chart -->
+         <a href="graphInfo.html">
           <canvas id="barChart" style="max-height: 400px;"></canvas>
           <script>
             document.addEventListener("DOMContentLoaded", () => {
               new Chart(document.querySelector('#barChart'), {
+                
                 type: 'bar',
                 data: {
                   labels: ['Bangalore', 'Chandigarh', 'Chennai', 'Cuttack', 'Goa', 'Guwahati', 'Hyderabad', 'Jaipur', 'Kolkata', 'Lucknow', 'Mumbai', 'New Delhi', 'Patna', 'Pune', 'Shillong', 'Thiruvananthapuram', 'Varanasi'],
                   datasets: [{
                     label: 'Regional office vs no. of activites',
                     cursor: 'pointer',
-                    onclick: "location.href = 'UI/grapghInfo.html';",
+                    onclick: "location.href = 'grapghInfo.html';",
 
                     data: [70, 59, 80, 81, 56, 55, 40, 100, 59, 80, 81, 56, 55, 40, 65, 59, 80],
                     backgroundColor: [
@@ -484,7 +486,9 @@
                 }
               });
             });
+            
           </script>
+        </a>
           <!-- End Bar CHart -->
 
 

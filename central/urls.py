@@ -44,7 +44,7 @@ urlpatterns = [
     #path("pages-faq/", views.pagesfaq, name="pages-faq"),
 
 
-    path("pages-faq/", views.pagesfaq, name="pages-faq"),
+    path("pagesfaq/", views.pagesfaq, name="pagesfaq"),
     path("contact/", views.contact, name="contact"),
     path("landing/", views.landing, name="landing"),
     path("raisetickets/", views.raisetickets, name="raisetickets"),
@@ -56,7 +56,11 @@ urlpatterns = [
     path("stats/", views.stats, name="stats"),
     path("scholarships/", views.scholarships, name="scholarships"),
     path("roform/", views.roform, name="roform"),
-
+    path("studentform/", views.studentform, name="studentform"),
+    path("leadership/", views.leadership, name="leadership"),
+    path("gallery/", views.gallery, name="gallery"),
+    path("team/", views.team, name="team"),
+    path("graphinfo/", views.graphinfo, name="graphinfo"),
 
 
 

@@ -89,6 +89,26 @@ def roform(request):
     return render(request, "central/roForm.html", {})
 
 
+def studentform(request):
+    return render(request, "central/studentForm.html", {})
+
+
+def leadership(request):
+    return render(request, "central/leadership.html", {})
+
+
+def gallery(request):
+    return render(request, "central/gallery.html", {})
+
+
+def team(request):
+    return render(request, "central/team.html", {})
+
+
+def graphinfo(request):
+    return render(request, "central/graphInfo.html", {})
+
+
 class PostListView(ListView):
     model = Post
     template_name = "central/home.html"
@@ -112,7 +132,7 @@ class PostDetailView(DetailView):
 
 class PostCreateView(LoginRequiredMixin, CreateView):
     model = Post
-    fields = ["title", "content"]
+    fields = ["title", "content", 'img']
 
     def form_valid(self, form):
         form.instance.author = self.request.user
@@ -121,7 +141,7 @@ class PostCreateView(LoginRequiredMixin, CreateView):
 
 class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Post
-    fields = ["title", "content"]
+    fields = ["title", "content", 'img']
 
     def form_valid(self, form):
         form.instance.author = self.request.user

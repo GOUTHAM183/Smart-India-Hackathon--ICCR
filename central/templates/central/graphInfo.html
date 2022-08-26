@@ -409,109 +409,67 @@
   </aside><!-- End Sidebar-->
 
     <main id="main" class="main">
-        <section class="mb-4">
+        <div class="col-12">
+            <div class="card recent-sales overflow-auto">
 
-            <!--Section heading-->
-            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-            <!--Section description-->
-            <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to
-                contact us directly. Our team will come back to you.</p>
+                <div class="card-body">
+                    <h5 class="card-title">Events conducted so far in
+                        <script>document.write(new Date().getFullYear());</script>
+                    </h5>
 
-            <div class="row">
-
-                <!--Grid column-->
-                <div class="col-md-8 mb-md-5 mb-5">
-                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <label for="name" class="">Your name</label>
-                                    <input type="text" id="name" name="name" class="form-control">
-                                </div>
-                            </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <label for="email" class="">Your email</label>
-                                    <input type="text" id="email" name="email" class="form-control">
-                                </div>
-                            </div>
-                            <!--Grid column-->
-
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form mb-0">
-                                    <label for="subject" class="">Subject</label>
-                                    <input type="text" id="subject" name="subject" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-12">
-
-                                <div class="md-form">
-                                    <label for="message">Your message</label>
-                                    <textarea type="text" id="message" name="message" rows="2"
-                                        class="form-control md-textarea"></textarea>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--Grid row-->
-
-                    </form>
-                    <div class="col-12"><br>
-                        <div class="text-center text-md-left">
-                            <a class="btn btn-primary"
-                                onclick="document.getElementById('contact-form').submit();">Send</a>
-                        </div>
-                        <div class="status"></div>
-                    </div>
-                </div>
-
-                <!--Grid column-->
-                <div class="col-md-4 text-center">
-
-                    <div class="card">
-                        <div class="card-body">
-                            <ul class="list-unstyled mb-0"></ul>
-                            <br>
-                            <p><strong>Bengaluru Regional Office</strong><br> <i class="bi bi-geo-alt-fill"></i>No.7/2,
-                                1st
-                                Floor, 2nd Main, Palace
-                                Cross
-                                Road Bangalore – 560
-                                020
-                                Karnataka</p><br>
-
-                            <p><i class="bi bi-telephone-fill"></i> 080-23462714, 23462715, 23566914</p><br>
-
-                            <p><i class="bi bi-envelope-fill"></i> robengaluru.iccr@gov.in ;
-                                &nbsp&nbsp&nbsp&nbsp&nbsp iccrbengaluru@gmail.com</p>
-                            </ul>
-                        </div>
-                    </div>
+                    <table class="table table-borderless datatable">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Event name</th>
+                                <th scope="col">Budget</th>
+                                <th scope="col">Budget ststus</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><a href="#">1</a></th>
+                                <td>29/08/2022</td>
+                                <td><a href="#" class="text-primary">Art Exhibition</a></td>
+                                <td>₹20000</td>
+                                <td><span class="badge bg-success">Approved</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="#">2</a></th>
+                                <td>07/09/2022</td>
+                                <td><a href="#" class="text-primary">Kala Vishwa Campaign</a></td>
+                                <td>₹8,00,000</td>
+                                <td><span class="badge bg-warning">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="#">3</a></th>
+                                <td>26/09/2022</td>
+                                <td><a href="#" class="text-primary">Classical Music</a></td>
+                                <td>₹1,90,000</td>
+                                <td><span class="badge bg-success">Approved</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="#">4</a></th>
+                                <td>10/10/2022</td>
+                                <td><a href="#" class="text-primar">Tabla Solo Recital</a></td>
+                                <td>₹2,00,000</td>
+                                <td><span class="badge bg-warning">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="#">5</a></th>
+                                <td>12/10/2022</td>
+                                <td><a href="#" class="text-primary">Seminar</a></td>
+                                <td>₹1,50,000</td>
+                                <td><span class="badge bg-success">Approved</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                 </div>
-                <!--Grid column-->
+
             </div>
-
-        </section>
+        </div>
 
     </main><!-- End #main -->
 

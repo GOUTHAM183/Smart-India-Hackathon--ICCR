@@ -12,7 +12,7 @@
 
   <!-- Favicons -->
   <!-- <link href="assets/img/favicon.png" rel="icon"> -->
-  <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -235,7 +235,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="{% url 'pages-faq' %}">
+              <a class="dropdown-item d-flex align-items-center" href="{% url 'pagesfaq' %}">
                 <i class="bi bi-question-circle"></i>
                 <span>Need Help?</span>
               </a>
@@ -273,10 +273,26 @@
 
  
       <li class="nav-item">
-        <a class="nav-link collapsed" href="{% url 'studentprofile' %}">
-          <i class="bi bi-person"></i>
-          <span>Students</span>
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-person"></i><span>Students</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
+        <ul id="tables-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="{% url 'studentprofile' %}">
+              <i class="bi bi-circle"></i><span>Stats</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'studentform' %}">
+              <i class="bi bi-circle"></i><span>Student Form</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'leadership' %}">
+              <i class="bi bi-circle"></i><span>Leader board</span>
+            </a>
+          </li>
+        </ul>
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
@@ -356,20 +372,20 @@
 
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="gallery.html">
+        <a class="nav-link collapsed" href="{% url 'gallery' %}">
           <i class="bi bi-camera-fill"></i>
           <span>Gallery</span>
         </a>
       </li><!-- End Blank Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="team.html">
+        <a class="nav-link collapsed" href="{% url 'team' %}">
           <i class="bi bi-people-fill"></i>
           <span>Team</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="usersProfile.html">
+        <a class="nav-link collapsed" href="{% url 'usersprofile' %}">
           <i class="bi bi-person"></i>
           <span>Profile</span>
         </a>
@@ -381,7 +397,7 @@
         </a>
       </li><!-- End Contact Page Nav -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-faq.html">
+        <a class="nav-link collapsed" href="{% url 'pagesfaq' %}">
           <i class="bi bi-question-circle"></i>
           <span>F.A.Q</span>
         </a>
@@ -398,7 +414,7 @@
       <h1>Dashboard</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
           <li class="breadcrumb-item active">Dashboard</li>
         </ol>
       </nav>
@@ -725,7 +741,7 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Upcoming Events <span>| Today</span></h5>
+                  <h5 class="card-title">Upcoming Events </h5>
 
                   <table class="table table-borderless datatable">
                     <thead>
@@ -733,8 +749,8 @@
                         <th scope="col">#</th>
                         <th scope="col">Date</th>
                         <th scope="col">Event name</th>
-                        <th scope="col">Incharge official</th>
                         <th scope="col">Budget</th>
+                        <th scope="col">Budget status</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -771,7 +787,7 @@
                         <td>12/10/2022</td>
                         <td><a href="#" class="text-primary">Seminar</a></td>
                         <td>₹1,50,000</td>
-                        <td><span class="badge bg-success">Seminar</span></td>
+                        <td><span class="badge bg-success">Approved</span></td>
                       </tr>
                     </tbody>
                   </table>
@@ -808,7 +824,7 @@
             </div>
 
             <div class="card-body">
-              <h5 class="card-title">Recent Activity <span>| Today</span></h5>
+              <h5 class="card-title">Recent Activity</h5>
 
               <div class="activity">
 
