@@ -271,11 +271,27 @@
 
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="studentProfile.html">
-          <i class="bi bi-person"></i>
-          <span>Students</span>
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-person"></i><span>Students</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-      </li><!-- End Profile Page Nav -->
+        <ul id="tables-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="studentProfile.html">
+              <i class="bi bi-circle"></i><span>Stats</span>
+            </a>
+          </li>
+          <li>
+            <a href="studentForm.html">
+              <i class="bi bi-circle"></i><span>Student Form</span>
+            </a>
+          </li>
+          <li>
+            <a href="leadership.html">
+              <i class="bi bi-circle"></i><span>Leader board</span>
+            </a>
+          </li>
+        </ul>
+      </li>
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="activityList.html">
@@ -337,12 +353,7 @@
           <span>Raise tickets</span>
         </a>
       </li><!-- End Login Page Nav -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="leadership.html">
-          <i class="bi bi-question-circle"></i>
-          <span>Leader Board</span>
-        </a>
-      </li>
+      
       <li class="nav-item">
         <a class="nav-link collapsed" href="gallery.html">
           <i class="bi bi-camera-fill"></i>

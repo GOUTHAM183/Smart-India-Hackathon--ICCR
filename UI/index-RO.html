@@ -423,7 +423,7 @@
                       <i class="bi bi-people-fill"></i>
                     </div>
                     <div class="ps-3">
-                      <h6>5000</h6>
+                      <h6>745</h6>
                       <span class="text-success small pt-1 fw-bold">12%</span> <span
                         class="text-muted small pt-2 ps-1">increase</span>
 
@@ -458,7 +458,7 @@
                       <i class="bi bi-calendar3"></i>
                     </div>
                     <div class="ps-3">
-                      <h6>300</h6>
+                      <h6>100</h6>
                       <span class="text-success small pt-1 fw-bold">8%</span> <span
                         class="text-muted small pt-2 ps-1">increase</span>
 
@@ -492,7 +492,7 @@
                       <i class="bi bi-currency-rupee"></i>
                     </div>
                     <div class="ps-3">
-                      <h6>₹200cr</h6>
+                      <h6>₹50000</h6>
                       <span class="text-success small pt-1 fw-bold">8%</span> <span
                         class="text-muted small pt-2 ps-1">increase</span>
 
@@ -528,7 +528,7 @@
                       <i class="bi bi-ticket-perforated"></i>
                     </div>
                     <div class="ps-3">
-                      <h6>150</h6>
+                      <h6>45</h6>
                       <span class="text-success small pt-1 fw-bold">8%</span> <span
                         class="text-muted small pt-2 ps-1">increase</span>
 
@@ -562,7 +562,7 @@
                       <i class="bi bi-person-plus"></i>
                     </div>
                     <div class="ps-3">
-                      <h6>25</h6>
+                      <h6>5</h6>
                       <span class="text-success small pt-1 fw-bold">8%</span> <span
                         class="text-muted small pt-2 ps-1">increase</span>
 
@@ -721,35 +721,35 @@
                       <tr>
                         <th scope="row"><a href="#">1</a></th>
                         <td>29/08/2022</td>
-                        <td><a href="#" class="text-primary">Art Exhibition</a></td>
+                        <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSc--1yGA43nIIWpGml7fGrgid1mdKEuExclpscq_XNUYIjDAg/viewform?usp=sf_link" target="_blank" class="text-primary">Art Exhibition</a></td>
                         <td>₹20000</td>
                         <td><span class="badge bg-success">Approved</span></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">2</a></th>
                         <td>07/09/2022</td>
-                        <td><a href="#" class="text-primary">Kala Vishwa Campaign</a></td>
+                        <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSc--1yGA43nIIWpGml7fGrgid1mdKEuExclpscq_XNUYIjDAg/viewform?usp=sf_link" target="_blank"class="text-primary">Kala Vishwa Campaign</a></td>
                         <td>₹8,00,000</td>
                         <td><span class="badge bg-warning">Pending</span></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">3</a></th>
                         <td>26/09/2022</td>
-                        <td><a href="#" class="text-primary">Classical Music</a></td>
+                        <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSc--1yGA43nIIWpGml7fGrgid1mdKEuExclpscq_XNUYIjDAg/viewform?usp=sf_link" target="_blank" class="text-primary">Classical Music</a></td>
                         <td>₹1,90,000</td>
                         <td><span class="badge bg-success">Approved</span></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">4</a></th>
                         <td>10/10/2022</td>
-                        <td><a href="#" class="text-primar">Tabla Solo Recital</a></td>
+                        <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSc--1yGA43nIIWpGml7fGrgid1mdKEuExclpscq_XNUYIjDAg/viewform?usp=sf_link" target="_blank" class="text-primar">Tabla Solo Recital</a></td>
                         <td>₹2,00,000</td>
                         <td><span class="badge bg-warning">Pending</span></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">5</a></th>
                         <td>12/10/2022</td>
-                        <td><a href="#" class="text-primary">Seminar</a></td>
+                        <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSc--1yGA43nIIWpGml7fGrgid1mdKEuExclpscq_XNUYIjDAg/viewform?usp=sf_link" target="_blank" class="text-primary">Seminar</a></td>
                         <td>₹1,50,000</td>
                         <td><span class="badge bg-success">Approved</span></td>
                       </tr>
@@ -847,113 +847,41 @@
 
           <!-- Budget Report -->
           <div class="card">
-            <div class="filter">
-              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                <li class="dropdown-header text-start">
-                  <h6>Filter</h6>
-                </li>
-
-                <li><a class="dropdown-item" href="#">Today</a></li>
-                <li><a class="dropdown-item" href="#">This Month</a></li>
-                <li><a class="dropdown-item" href="#">This Year</a></li>
-              </ul>
-            </div>
-
-            <div class="card">
-              <div class="card-body">
-                  <h5 class="card-title">Budget Analysis</h5>
-                <canvas id="pieChart" style="max-height: 400px;"></canvas>
-                <script>
-                  document.addEventListener("DOMContentLoaded", () => {
-                    new Chart(document.querySelector('#pieChart'), {
-                      type: 'pie',
-                      data: {
-                        labels: [
-                          'Horizon series/Kala vishwa program',
-                          'International student welfare',
-                          'Exhibitions/Seminar',
-                          'Scholarships',
-                          'Distinguished visitors'
+            <div class="card-body">
+                <h5 class="card-title">Budget Analysis</h5>
+              <canvas id="pieChart" style="max-height: 400px;"></canvas>
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  new Chart(document.querySelector('#pieChart'), {
+                    type: 'pie',
+                    data: {
+                      labels: [
+                        'Horizon series/Kala vishwa program',
+                        'International student welfare',
+                        'Exhibitions/Seminar',
+                        'Scholarships',
+                        'Distinguished visitors'
+                      ],
+                      datasets: [{
+                        label: 'My First Dataset',
+                        data: [90, 90, 45, 45, 21],
+                        backgroundColor: [
+                          'rgb(255, 99, 132)',
+                          'rgb(54, 162, 235)',
+                          'rgb(255, 205, 86)',
+                          'rgb(128,0,128)',
+                          'rgb(255, 165, 0)'
+    
                         ],
-                        datasets: [{
-                          label: 'My First Dataset',
-                          data: [90, 90, 45, 45, 21],
-                          backgroundColor: [
-                            'rgb(255, 99, 132)',
-                            'rgb(54, 162, 235)',
-                            'rgb(255, 205, 86)',
-                            'rgb(128,0,128)',
-                            'rgb(255, 165, 0)'
-      
-                          ],
-                          hoverOffset: 4
-                        }]
-                      }
-                    });
+                        hoverOffset: 4
+                      }]
+                    }
                   });
-                </script>
-              </div>
+                });
+              </script>
             </div>
+          </div>
 
-
-          <!-- News & Updates Traffic -->
-          <!-- <div class="card">
-            <div class="filter">
-              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                <li class="dropdown-header text-start">
-                  <h6>Filter</h6>
-                </li>
-
-                <li><a class="dropdown-item" href="#">Today</a></li>
-                <li><a class="dropdown-item" href="#">This Month</a></li>
-                <li><a class="dropdown-item" href="#">This Year</a></li>
-              </ul>
-            </div>
-
-            <div class="card-body pb-0">
-              <h5 class="card-title">News &amp; Updates <span>| Today</span></h5>
-
-              <div class="news">
-                <div class="post-item clearfix">
-                  <img src="assets/img/news-1.jpg" alt="">
-                  <h4><a href="#">Nihil blanditiis at in nihil autem</a></h4>
-                  <p>Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum...</p>
-                </div>
-
-                <div class="post-item clearfix">
-                  <img src="assets/img/news-2.jpg" alt="">
-                  <h4><a href="#">Quidem autem et impedit</a></h4>
-                  <p>Illo nemo neque maiores vitae officiis cum eum turos elan dries werona nande...</p>
-                </div>
-
-                <div class="post-item clearfix">
-                  <img src="assets/img/news-3.jpg" alt="">
-                  <h4><a href="#">Id quia et et ut maxime similique occaecati ut</a></h4>
-                  <p>Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam et totam...</p>
-                </div>
-
-                <div class="post-item clearfix">
-                  <img src="assets/img/news-4.jpg" alt="">
-                  <h4><a href="#">Laborum corporis quo dara net para</a></h4>
-                  <p>Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum cuder...</p>
-                </div>
-
-                <div class="post-item clearfix">
-                  <img src="assets/img/news-5.jpg" alt="">
-                  <h4><a href="#">Et dolores corrupti quae illo quod dolor</a></h4>
-                  <p>Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos eius...</p>
-                </div>
-
-              </div><!-- End sidebar recent posts -->
-
-          <!-- </div>
-          </div>End News & Updates -->
-
-        </div><!-- End Right side columns -->
-
-      </div>
     </section>
 
   </main><!-- End #main -->
