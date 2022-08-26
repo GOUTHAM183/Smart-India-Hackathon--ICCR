@@ -310,55 +310,67 @@
             <div class="card recent-sales overflow-auto">
 
                 <div class="card-body">
-                    <h5 class="card-title">Events conducted so far in
-                        <script>document.write(new Date().getFullYear());</script>
-                    </h5>
+                    <div class="d-flex justify-content-between align-content-center">
+                        <h5 class="card-title">Events conducted so far in
+                            <script>document.write(new Date().getFullYear());</script>
+                        </h5>
+                        <div class="d-flex">
+                            <button class="btn btn-success w-10" type="button" onclick="tableToCSV()"
+                                style="margin: 10px">
+                                Download CSV
+                            </button>
+                            <button id=btnExport class="btn btn-danger w-10" type="button" onclick="Export()"
+                                style="margin: 10px">
+                                Download PDF
+                            </button>
+                        </div>
+                    </div>
 
-                    <table class="table table-borderless datatable">
+                    <table class="table table-borderless datatable" id="exportMe">
                         <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Date</th>
-                                <th scope="col">Event name</th>
-                                <th scope="col">Budget</th>
-                                <th scope="col">Budget ststus</th>
+                            <tr name="row_val">
+                                <th scope="col" id="col_val">#</th>
+                                <th scope="col" id="col_val">Date</th>
+                                <th scope="col" id="col_val">Event name</th>
+                                <th scope="col" id="col_val">Budget</th>
+                                <th scope="col" id="col_val">Budget status</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row"><a href="#">1</a></th>
-                                <td>29/08/2022</td>
-                                <td><a href="#" class="text-primary">Art Exhibition</a></td>
-                                <td>₹20000</td>
-                                <td><span class="badge bg-success">Approved</span></td>
+                            <tr name="row_val">
+                                <th scope="row"><a href="#" id="col_val">1</a></th>
+                                <td id="col_val">29/08/2022</td>
+                                <td><a href="#" class="text-primary" id="col_val">Art Exhibition</a></td>
+                                <td id="col_val">₹20000</td>
+                                <td><span class="badge bg-success" id="col_val">Approved</span></td>
                             </tr>
-                            <tr>
-                                <th scope="row"><a href="#">2</a></th>
-                                <td>07/09/2022</td>
-                                <td><a href="#" class="text-primary">Kala Vishwa Campaign</a></td>
-                                <td>₹8,00,000</td>
-                                <td><span class="badge bg-warning">Pending</span></td>
+                            <tr name="row_val">
+                                <th scope="row"><a href="#" id="col_val">2</a></th>
+                                <td id="col_val">07/09/2022</td>
+                                <td><a href="#" class="text-primary" id="col_val">Kala Vishwa Campaign</a></td>
+                                <td id="col_val">₹800000</td>
+                                <td><span class="badge bg-warning" id="col_val">Pending</span></td>
                             </tr>
-                            <tr>
-                                <th scope="row"><a href="#">3</a></th>
-                                <td>26/09/2022</td>
-                                <td><a href="#" class="text-primary">Classical Music</a></td>
-                                <td>₹1,90,000</td>
-                                <td><span class="badge bg-success">Approved</span></td>
+                            <tr name="row_val">
+                                <th scope="row"><a href="#" id="col_val">3</a></th>
+                                <td id="col_val">26/09/2022</td>
+                                <td><a href="#" class="text-primary" id="col_val">Classical Music</a></td>
+                                <td id="col_val">₹190000</td>
+                                <td><span class="badge bg-success" id="col_val">Approved</span></td>
                             </tr>
-                            <tr>
-                                <th scope="row"><a href="#">4</a></th>
-                                <td>10/10/2022</td>
-                                <td><a href="#" class="text-primar">Tabla Solo Recital</a></td>
-                                <td>₹2,00,000</td>
-                                <td><span class="badge bg-warning">Pending</span></td>
+                            <tr name="row_val">
+                                <th scope="row"><a href="#" id="col_val">4</a></th>
+                                <td id="col_val">10/10/2022</td>
+                                <td><a href="#" class="text-primar" id="col_val">Tabla Solo Recital</a></td>
+                                <td id="col_val">₹200000</td>
+                                <td><span class="badge bg-warning" id="col_val">Pending</span></td>
                             </tr>
-                            <tr>
-                                <th scope="row"><a href="#">5</a></th>
-                                <td>12/10/2022</td>
-                                <td><a href="#" class="text-primary">Seminar</a></td>
-                                <td>₹1,50,000</td>
-                                <td><span class="badge bg-success">Approved</span></td>
+                            <tr name="row_val">
+                                <th scope="row"><a href="#" id="col_val">5</a></th>
+                                <td id="col_val">12/10/2022</td>
+                                <td><a href="#" class="text-primary" id="col_val">Seminar</a></td>
+                                <td id="col_val">₹150000</td>
+                                <td><span class="badge bg-success" id="col_val">Approved</span></td>
                             </tr>
                         </tbody>
                     </table>
@@ -381,7 +393,7 @@
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
 
-    <!-- Vendor JS Files -->
+
     <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/chart.js/chart.min.js"></script>
@@ -390,9 +402,93 @@
     <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
     <script src="assets/vendor/tinymce/tinymce.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 
-    <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script type="text/javascript">
+        function tableToCSV() {
+
+            // Variable to store the final csv data
+            var csv_data = [];
+
+            // Get each row data
+            var rows = document.getElementsByName('row_val');
+            //console.log(rows)
+            for (var i = 0; i < rows.length; i++) {
+
+                // Get each column data
+                var cols = rows[i].querySelectorAll('#col_val');
+
+                // Stores each csv row data
+                var csvrow = [];
+                for (var j = 0; j < cols.length; j++) {
+
+                    // Get the text data of each cell
+                    // of a row and push it to csvrow
+                    csvrow.push(cols[j].textContent);
+                }
+
+                // Combine each column value with comma
+                csv_data.push(csvrow.join(","));
+            }
+
+            // Combine each row data with new line character
+            csv_data = csv_data.join('\n');
+            //console.log(csv_data)
+
+            // Call this function to download csv file 
+            downloadCSVFile(csv_data);
+
+        }
+
+        function downloadCSVFile(csv_data) {
+
+            // Create CSV file object and feed
+            // our csv_data into it
+            CSVFile = new Blob([csv_data], {
+                type: "text/csv"
+            });
+
+            // Create to temporary link to initiate
+            // download process
+            var temp_link = document.createElement('a');
+
+            // Download csv file
+            temp_link.download = "Activity_details.csv";
+            var url = window.URL.createObjectURL(CSVFile);
+            temp_link.href = url;
+
+            // This link should not be displayed
+            temp_link.style.display = "none";
+            document.body.appendChild(temp_link);
+
+            // Automatically click the link to
+            // trigger download
+            temp_link.click();
+            document.body.removeChild(temp_link);
+        }
+
+        function Export() {
+            console.log('hi')
+            html2canvas(document.getElementById('exportMe'), {
+                onrendered: function (canvas) {
+                    var data = canvas.toDataURL();
+                    var docDefinition = {
+                        content: [{
+                            image: data,
+                            width: 500
+                        }]
+                    };
+                    pdfMake.createPdf(docDefinition).download("Table.pdf");
+                }
+            });
+        }
+
+    </script>
+
 
 </body>
 
