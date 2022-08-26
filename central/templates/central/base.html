@@ -48,9 +48,9 @@
                 {%if user.is_authenticated and user.is_superuser %}
                 
                 <a class="nav-item nav-link" href="{% url 'post-create'%}">New Post</a>
-                {% elif user.is_authenticated and user.username == "Chennai" %}
+                {% elif user.is_authenticated and user.username == "RO-Chennai" %}
                 <a class="nav-item nav-link" href="{% url 'post-create'%}">New Post</a>
-                {% elif user.is_authenticated and user.username == "Bangalore" %}
+                {% elif user.is_authenticated and user.username == "RO-Bangalore" %}
                 <a class="nav-item nav-link" href="{% url 'post-create'%}">New Post</a>
                 {%endif%}
                 
