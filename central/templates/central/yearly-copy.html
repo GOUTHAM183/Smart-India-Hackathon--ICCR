@@ -9,9 +9,8 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
 
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-     
+
+
 
     <!-- Google Fonts -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -136,7 +135,7 @@
 
                 <li class="nav-item dropdown">
 
-                      
+
 
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
                         <li class="dropdown-header">
@@ -286,26 +285,27 @@
 
             <li class="nav-item">
                 <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-                  <i class="bi bi-menu-button-wide"></i><span>Analytics</span><i class="bi bi-chevron-down ms-auto"></i>
+                    <i class="bi bi-menu-button-wide"></i><span>Analytics</span><i
+                        class="bi bi-chevron-down ms-auto"></i>
                 </a>
                 <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                  <li>
-                    <a href="budgetAnalytics.html">
-                      <i class="bi bi-circle"></i><span>Monthly</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="quarterly.html">
-                      <i class="bi bi-circle"></i><span>Quarterly</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="yearly.html">
-                      <i class="bi bi-circle"></i><span>Yearly</span>
-                    </a>
-                  </li>
-                  </ul>
-                  </li>
+                    <li>
+                        <a href="budgetAnalytics.html">
+                            <i class="bi bi-circle"></i><span>Monthly</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quarterly.html">
+                            <i class="bi bi-circle"></i><span>Quarterly</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="yearly.html">
+                            <i class="bi bi-circle"></i><span>Yearly</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="scholarships.html">
@@ -315,10 +315,10 @@
             </li><!-- End Register Page Nav -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="roForm.html">
-                  <i class="bi bi-ui-checks"></i>
-                  <span>RO Form</span>
+                    <i class="bi bi-ui-checks"></i>
+                    <span>RO Form</span>
                 </a>
-              </li>
+            </li>
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="raiseTickets.html">
@@ -343,22 +343,22 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="usersProfile.html">
-                  <i class="bi bi-person"></i>
-                  <span>Profile</span>
+                    <i class="bi bi-person"></i>
+                    <span>Profile</span>
                 </a>
-              </li><!-- End Profile Page Nav -->
-              <li class="nav-item">
+            </li><!-- End Profile Page Nav -->
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="contact.html">
-                  <i class="bi bi-envelope"></i>
-                  <span>Contact</span>
+                    <i class="bi bi-envelope"></i>
+                    <span>Contact</span>
                 </a>
-              </li><!-- End Contact Page Nav -->
-              <li class="nav-item">
+            </li><!-- End Contact Page Nav -->
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="pages-faq.html">
-                  <i class="bi bi-question-circle"></i>
-                  <span>F.A.Q</span>
+                    <i class="bi bi-question-circle"></i>
+                    <span>F.A.Q</span>
                 </a>
-              </li><!-- End F.A.Q Page Nav -->
+            </li><!-- End F.A.Q Page Nav -->
 
 
         </ul>
@@ -370,7 +370,7 @@
             &copy; Copyright <strong><span>Access Denied</span></strong>. All Rights Reserved
         </div>
         <!--<div class="credits">-->
-        
+
 
         <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
                 class="bi bi-arrow-up-short"></i></a>
@@ -389,109 +389,109 @@
         <script src="assets/js/main.js"></script>
         <div class="d-flex justify-content-evenly" style="padding:5%;">
             <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Bar Chart depiction Regional office against no. of activities conducted</h5>
-  
-                <!-- Bar Chart -->
-                <canvas id="barChart" style="max-height: 400px;"></canvas>
-                <script>
-                  document.addEventListener("DOMContentLoaded", () => {
-                    new Chart(document.querySelector('#barChart'), {
-                      type: 'bar',
-                      data: {
-                        labels: ['Bangalore', 'Chandigarh', 'Chennai', 'Cuttack', 'Goa', 'Guwahati', 'Hyderabad','Jaipur', 'Kolkata', 'Lucknow', 'Mumbai','New Delhi', 'Patna', 'Pune', 'Shillong','Thiruvananthapuram', 'Varanasi'],
-                        datasets: [{
-                          label: 'Regional office vs no. of activites',
-                          data: [800, 770, 830, 835, 770, 765, 720,1000, 770, 830, 735, 670, 765, 820,800, 670, 830],
-                          backgroundColor: [
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
-                            'rgba(255, 205, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(201, 203, 207, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
-                            'rgba(255, 205, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(201, 203, 207, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
-                            'rgba(255, 205, 86, 0.2)'
-                          ],
-                          borderColor: [
-                            'rgb(255, 99, 132)',
-                            'rgb(255, 159, 64)',
-                            'rgb(255, 205, 86)',
-                            'rgb(75, 192, 192)',
-                            'rgb(54, 162, 235)',
-                            'rgb(153, 102, 255)',
-                            'rgb(201, 203, 207)',
-                            'rgb(255, 99, 132)',
-                            'rgb(255, 159, 64)',
-                            'rgb(255, 205, 86)',
-                            'rgb(75, 192, 192)',
-                            'rgb(54, 162, 235)',
-                            'rgb(153, 102, 255)',
-                            'rgb(201, 203, 207)',
-                            'rgb(255, 99, 132)',
-                            'rgb(255, 159, 64)',
-                            'rgb(255, 205, 86)'
-                          ],
-                          borderWidth: 1
-                        }]
-                      },
-                      options: {
-                        scales: {
-                          y: {
-                            beginAtZero: true
-                          }
-                        }
-                      }
-                    });
-                  });
-                </script>
-                </div>
-                </div>
-                <!-- End Bar CHart -->
-                <div class="card">
                 <div class="card-body">
-                <canvas id="pieChart" style="max-height: 400px;"></canvas>
-                <script>
-                  document.addEventListener("DOMContentLoaded", () => {
-                    new Chart(document.querySelector('#pieChart'), {
-                      type: 'pie',
-                      data: {
-                        labels: [
-                          'Horizon series/Kala vishwa program',
-                          'International student welfare',
-                          'Exhibitions/Seminar',
-                          'Scholarships',
-                          'Distinguished visitors'
-                        ],
-                        datasets: [{
-                          label: 'My First Dataset',
-                          data: [360, 360, 180,180,84],
-                          backgroundColor: [
-                            'rgb(255, 99, 132)',
-                            'rgb(54, 162, 235)',
-                            'rgb(255, 205, 86)',
-                             'rgb(128,0,128)',
-                             'rgb(255, 165, 0)'
-  
-                          ],
-                          hoverOffset: 4
-                        }]
-                      }
-                    });
-                  });
-                </script>
-              </div>
+                    <h5 class="card-title">Bar Chart depiction Regional office against no. of activities conducted</h5>
+
+                    <!-- Bar Chart -->
+                    <canvas id="barChart" style="max-height: 400px;"></canvas>
+                    <script>
+                        document.addEventListener("DOMContentLoaded", () => {
+                            new Chart(document.querySelector('#barChart'), {
+                                type: 'bar',
+                                data: {
+                                    labels: ['Bangalore', 'Chandigarh', 'Chennai', 'Cuttack', 'Goa', 'Guwahati', 'Hyderabad', 'Jaipur', 'Kolkata', 'Lucknow', 'Mumbai', 'New Delhi', 'Patna', 'Pune', 'Shillong', 'Thiruvananthapuram', 'Varanasi'],
+                                    datasets: [{
+                                        label: 'Regional office vs no. of activites',
+                                        data: [800, 770, 830, 835, 770, 765, 720, 1000, 770, 830, 735, 670, 765, 820, 800, 670, 830],
+                                        backgroundColor: [
+                                            'rgba(255, 99, 132, 0.2)',
+                                            'rgba(255, 159, 64, 0.2)',
+                                            'rgba(255, 205, 86, 0.2)',
+                                            'rgba(75, 192, 192, 0.2)',
+                                            'rgba(54, 162, 235, 0.2)',
+                                            'rgba(153, 102, 255, 0.2)',
+                                            'rgba(201, 203, 207, 0.2)',
+                                            'rgba(255, 99, 132, 0.2)',
+                                            'rgba(255, 159, 64, 0.2)',
+                                            'rgba(255, 205, 86, 0.2)',
+                                            'rgba(75, 192, 192, 0.2)',
+                                            'rgba(54, 162, 235, 0.2)',
+                                            'rgba(153, 102, 255, 0.2)',
+                                            'rgba(201, 203, 207, 0.2)',
+                                            'rgba(255, 99, 132, 0.2)',
+                                            'rgba(255, 159, 64, 0.2)',
+                                            'rgba(255, 205, 86, 0.2)'
+                                        ],
+                                        borderColor: [
+                                            'rgb(255, 99, 132)',
+                                            'rgb(255, 159, 64)',
+                                            'rgb(255, 205, 86)',
+                                            'rgb(75, 192, 192)',
+                                            'rgb(54, 162, 235)',
+                                            'rgb(153, 102, 255)',
+                                            'rgb(201, 203, 207)',
+                                            'rgb(255, 99, 132)',
+                                            'rgb(255, 159, 64)',
+                                            'rgb(255, 205, 86)',
+                                            'rgb(75, 192, 192)',
+                                            'rgb(54, 162, 235)',
+                                            'rgb(153, 102, 255)',
+                                            'rgb(201, 203, 207)',
+                                            'rgb(255, 99, 132)',
+                                            'rgb(255, 159, 64)',
+                                            'rgb(255, 205, 86)'
+                                        ],
+                                        borderWidth: 1
+                                    }]
+                                },
+                                options: {
+                                    scales: {
+                                        y: {
+                                            beginAtZero: true
+                                        }
+                                    }
+                                }
+                            });
+                        });
+                    </script>
+                </div>
             </div>
-          </div>
+            <!-- End Bar CHart -->
+            <div class="card">
+                <div class="card-body">
+                    <canvas id="pieChart" style="max-height: 400px;"></canvas>
+                    <script>
+                        document.addEventListener("DOMContentLoaded", () => {
+                            new Chart(document.querySelector('#pieChart'), {
+                                type: 'pie',
+                                data: {
+                                    labels: [
+                                        'Horizon series/Kala vishwa program',
+                                        'International student welfare',
+                                        'Exhibitions/Seminar',
+                                        'Scholarships',
+                                        'Distinguished visitors'
+                                    ],
+                                    datasets: [{
+                                        label: 'My First Dataset',
+                                        data: [360, 360, 180, 180, 84],
+                                        backgroundColor: [
+                                            'rgb(255, 99, 132)',
+                                            'rgb(54, 162, 235)',
+                                            'rgb(255, 205, 86)',
+                                            'rgb(128,0,128)',
+                                            'rgb(255, 165, 0)'
+
+                                        ],
+                                        hoverOffset: 4
+                                    }]
+                                }
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
 
 </body>
 

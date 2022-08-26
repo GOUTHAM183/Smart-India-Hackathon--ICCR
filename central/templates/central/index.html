@@ -203,12 +203,28 @@
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="{% static 'central/assets/img/profile-img.jpg' %}" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2">Bengaluru RO</span>
+              {%if user.is_authenticated and user.is_superuser %}
+              <span class="d-none d-md-block dropdown-toggle ps-2">ICCR</span>
+              {% elif user.is_authenticated and user.username == "Chennai" %}
+              <span class="d-none d-md-block dropdown-toggle ps-2">Chennai RO</span>
+              {% elif user.is_authenticated and user.username == "Bangalore" %}
+              <span class="d-none d-md-block dropdown-toggle ps-2">Bangalore RO</span>
+              {% elif user.is_authenticated and user.username == "Student" %}
+              <span class="d-none d-md-block dropdown-toggle ps-2">Student</span>
+              {%endif%}
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
+              {%if user.is_authenticated and user.is_superuser %}
+              <h6>ICCR Office</h6>
+              {% elif user.is_authenticated and user.username == "Chennai" %}
+              <h6>Chennai Regional Office</h6>
+              {% elif user.is_authenticated and user.username == "Bangalore" %}
               <h6>Bengaluru Regional Office</h6>
+              {% elif user.is_authenticated and user.username == "Student" %}
+              <h6>Student</h6>
+              {%endif%}
             </li>
             <li>
               <hr class="dropdown-divider">
